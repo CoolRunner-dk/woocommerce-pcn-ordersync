@@ -9,15 +9,14 @@ class PCNOrderSync_Curl
      * @param $endDate
      * @return array
      */
-    public static function getOrdersFromPeriod($maxResults, $startDate, $endDate)
+    public static function getOrdersFromPeriod($startDate, $endDate)
     {
         // Store credentials and period in array for cURL
         $data = array(
             'cid' => get_option('pcn_settings_olsuserid'),
             'olsuser' => get_option('pcn_settings_olsusername'),
             'olspass' => get_option('pcn_settings_olspassword'),
-            'maxresults' => $maxResults,
-            'quickview' => 0,
+            'maxresults' => "*",
             'period' => array(
                 'startdate' => $startDate,
                 'enddate' => $endDate

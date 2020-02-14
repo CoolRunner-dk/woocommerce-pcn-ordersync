@@ -68,6 +68,13 @@ if (!class_exists('WC_Settings_PCNOrderSync')) {
                             'failed' => __( 'Failed', 'coolrunner-pcn-ordersync' ),
                         ),
                         'desc_tip' =>  true,
+                    ),
+                    array(
+                        'name' => __('Debug', 'coolrunner-pcn-ordersync'),
+                        'type' => 'checkbox',
+                        'id' => 'pcn_settings_debug',
+                        'desc_tip' => false,
+                        'desc' => __('Debug', 'coolrunner-pcn-stocksync'),
                     )
                 );
 

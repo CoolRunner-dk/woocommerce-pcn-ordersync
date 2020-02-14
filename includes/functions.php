@@ -12,7 +12,11 @@ function pcn_ordersync_checkorder() {
     $endDate = date("d-m-y H:i", time());
     date_default_timezone_set($old_tz);
 
-    $ordersWithinPeriod = PCNOrderSync_Curl::getOrdersFromPeriod("*", $startDate, $endDate);
+    $ordersWithinPeriod = PCNOrderSync_Curl::getOrdersFromPeriod($startDate, $endDate);
+
+    if(get_option('pcn_settings_debug') == 'yes') {
+        error_log('Response from getOrdersFromPeriod: ' . print_r($ordersWithinPeriod, 1));
+    }
 
     if(isset($ordersWithinPeriod->results) AND count($ordersWithinPeriod->results)) {
         foreach ($ordersWithinPeriod->results as $pcnOrder) {
