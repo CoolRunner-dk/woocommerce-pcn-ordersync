@@ -26,7 +26,7 @@ Download the folder "coolrunner-pcn-ordersync" and inside your Wordpress solutio
 
 **> Installing using pre-packaged version**
 
-Use the pre-packaged version: [coolrunner_pcn_ordersync.zip](https://github.com/CoolRunner-dk/woocommerce-pcn-ordersync/raw/master/coolrunner_pcn_ordersync.zip)
+Use the pre-packaged version: [woocommerce_pcn_ordersync.zip](https://github.com/CoolRunner-dk/woocommerce-pcn-ordersync/raw/master/woocommerce_pcn_ordersync.zip)
 
 Go to your Wordpress website (with woocommerce enabled) and go to "Plugins -> Add New -> Upload Plugin" and select the zip-archive you've packaged or downloaded containing the plugin.
 
