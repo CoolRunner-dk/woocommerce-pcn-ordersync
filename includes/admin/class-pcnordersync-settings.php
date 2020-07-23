@@ -32,7 +32,7 @@ if (!class_exists('WC_Settings_PCNOrderSync')) {
                         'id' => 'pcnordersync_setting',
                     ),
                     array(
-                        'name'    => __( 'Status for new orders', 'coolrunner-pcn-ordersync' ),
+                        'name'    => __( 'Status for new order', 'coolrunner-pcn-ordersync' ),
                         'desc'    => __( 'Add the status new orders in your webshop gets', 'coolrunner-pcn-ordersync' ),
                         'id'      => 'pcn_settings_neworderstatus',
                         'css'     => 'min-width:150px;',
