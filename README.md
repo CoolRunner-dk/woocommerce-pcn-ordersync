@@ -1,4 +1,4 @@
-WooCommerce PCN OrderSync
+WooCommerce PCN OrderSync (DEPRECATED)
 ==========================
 
 License: MIT
